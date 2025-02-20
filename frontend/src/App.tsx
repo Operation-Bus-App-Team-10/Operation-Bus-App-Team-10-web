@@ -3,6 +3,7 @@ import React from "react";
 import Products from "./Products/Products"
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
 import "./index.css";
+import Orders from "./Orders/Orders";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <p>This is a simple website structure.</p>
                 <Routes>
                     <Route path="/catalog" element={<Products />} />
+                    <Route path="orders" element={<Orders/>} />
                 </Routes>
             </main>
             <footer>
